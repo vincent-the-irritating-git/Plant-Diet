@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="masterPane" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0"
+          prefWidth="366.0" xmlns="http://javafx.com/javafx/15.0.1"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.dissertation.DetailsController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.0" minWidth="10.0" prefWidth="216.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="432.0" minWidth="10.0" prefWidth="150.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="181.0" minHeight="0.0" prefHeight="111.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="265.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="104.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox fillWidth="false" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </GridPane.margin>
+         <children>
+            <Label text="Height:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="heightBox" prefHeight="17.0" prefWidth="134.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="heightText" prefHeight="25.0" prefWidth="122.0">
+               <VBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox fillWidth="false" prefHeight="56.0" prefWidth="223.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </GridPane.margin>
+         <children>
+            <Label text="Weight:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="weightBox" prefHeight="17.0" prefWidth="154.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="weightText" prefHeight="25.0" prefWidth="123.0">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#changeHeight" text="Confirm" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#changeWeight" text="Confirm" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <VBox fillWidth="false" prefHeight="86.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label text="Calorie Goal:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="calorieBox" prefHeight="17.0" prefWidth="154.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="calorieText" prefHeight="25.0" prefWidth="123.0">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <GridPane.margin>
+            <Insets left="10.0" top="10.0" />
+         </GridPane.margin>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#changeCalorieGoal" text="Confirm" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#goBack" text="&lt;-" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+         <GridPane.margin>
+            <Insets right="10.0" top="10.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

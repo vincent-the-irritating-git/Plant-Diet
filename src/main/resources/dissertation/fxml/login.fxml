@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="Pane1" alignment="CENTER" fillWidth="false"
+      maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+      spacing="10.0" xmlns="http://javafx.com/javafx/15.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dissertation.LoginController">
+   <children>
+      <Label fx:id="signInStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="578.0" textFill="#e4320f">
+         <VBox.margin>
+            <Insets bottom="55.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Courier New Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" fillHeight="false" prefHeight="0.0" prefWidth="256.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="66.0" text="E-mail:" />
+            <TextField fx:id="email" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" fillHeight="false" prefHeight="0.0" prefWidth="256.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="73.0" text="Password:" />
+            <PasswordField fx:id="password" prefHeight="25.0" prefWidth="145.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="register" alignment="CENTER" fillHeight="false" prefHeight="0.0" prefWidth="256.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+            <Button mnemonicParsing="false" onAction="#register" text="Register" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
